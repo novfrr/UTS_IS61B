@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\SiswaController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -19,4 +20,9 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes();
 
-Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/siswa/', [SiswaController::class, 'index'])->middleware('auth');
+Route::get('/siswa/form/', [SiswaController::class, 'create'])->middleware('auth');
+Route::post('/siswa/store/', [SiswaController::class, 'store'])->middleware('auth');
+Route::get('/siswa/edit/{id}', [SiswaController::class, 'edit'])->middleware('auth');
+Route::put('/siswa/{id}', [SiswaController::class, 'update'])->middleware('auth');
+Route::delete('/siswa/{id}', [SiswaController::class, 'destroy'])->middleware('auth');
