@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PendaftaranController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,3 +21,11 @@ use Illuminate\Support\Facades\Route;
 Auth::routes();
 
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+// Data pendaftaran
+Route::get('/pendaftaran', [PendaftaranController::class, 'index']);
+Route::get('/pendaftaran/form/', [PendaftaranController::class, 'create'])->middleware('auth');
+Route::post('/pendaftaran/store/', [PendaftaranController::class, 'store'])->middleware('auth');
+Route::get('/pendaftaran/edit/{id}', [PendaftaranController::class, 'edit'])->middleware('auth');
+Route::put('/pendaftaran/{id}', [PendaftaranController::class, 'update'])->middleware('auth');
+Route::delete('/pendaftaran/{id}', [PendaftaranController::class, 'destroy'])->middleware('auth');

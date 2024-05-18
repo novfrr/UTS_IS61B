@@ -51,7 +51,7 @@
             <li class="nav-item">
                 <a class="nav-link" href="/siswa/">
                     <i class="fas fa-fw fa-user"></i>
-                    <span>Siswa</span></a>
+                    <span>Data Siswa</span></a>
             </li>
 
             <!-- Divider -->
@@ -59,30 +59,11 @@
 
             <!-- Nav Item - Pembayaran -->
             <li class="nav-item">
-                <a class="nav-link" href="/pembayaran/">
+                <a class="nav-link" href="/pendaftaran/">
                     <i class="fas fa-fw fa-money-bill"></i>
-                    <span>Pembayaran</span></a>
+                    <span>Pendaftaran</span></a>
             </li>
 
-            <!-- Divider -->
-            <hr class="sidebar-divider">
-
-            <!-- Nav Item - Pelajaran -->
-            <li class="nav-item">
-                <a class="nav-link" href="/pelajaran/">
-                    <i class="fas fa-fw fa-book"></i>
-                    <span>Pelajaran</span></a>
-            </li>
-
-            <!-- Divider -->
-            <hr class="sidebar-divider">
-
-            <!-- Nav Item - Nilai -->
-            <li class="nav-item">
-                <a class="nav-link" href="nilai.html">
-                    <i class="fas fa-fw fa-chart-line"></i>
-                    <span>Nilai</span></a>
-            </li>
 
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
